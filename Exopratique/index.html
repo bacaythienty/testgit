@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revision formation react</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        h1{
+        color: brown;
+        text-align: center;
+        }
+       
+        p{
+            width: 90%;
+            text-align: center;
+            margin: 0 auto;
+            background-color: aliceblue;
+            padding: 20px;
+            font-size: 15px;
+            color: black;
+             border-radius: none;
+        }
+        button{
+             display: block;
+             margin: 10px auto;
+             padding: 10px 20px;
+             font-size: 16px;
+             color: aliceblue;
+             background-color: brown;
+             border: none;
+             border-radius: 5px;
+             cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(201, 44, 167); 
+        }
+    </style>
+</head>
+<script>
+    function changeTexte(){
+          document.getElementById('demo').innerHTML = "holo word";
+    }  
+
+    function changeColor(){
+          document.getElementById('demo').style.color = "holo word";
+    }      
+    function showAlert(){
+        alert("hello word")
+          
+    }
+</script>
+<body>
+    <h1>Exercices pratique</h1>
+    
+    <p id="demo"> 
+        Lorem ipsum dolor, sit amet 
+        consectetur adipisicing 
+        elit. Quibusdam, natus unde a
+        sapiente in quam perferendis fugiat.
+        Molestiae, dolores reiciendis, nulla
+        obcaecati deserunt nobis modi,
+        accusamus iure necessitatibus 
+        consequatur nihil.
+    </p>
+    <button onclick="changeTexte()">Changer le texte</button>
+    <button onclick="changeColor()">Changer la couleur</button>
+    <button onclick="showAlert()">Afficher une alerte</button>
+</body>
+</html>
